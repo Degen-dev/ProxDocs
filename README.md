@@ -17,6 +17,7 @@ Making "sufficient" documentation for a proxy site is difficult and lengthy. Pro
 - [Configuration](https://github.com/Degen-dev/ProxDocs/blob/master/Configuration.md)
 - [Hosting](https://github.com/Degen-dev/ProxDocs/blob/master/Hosting.md)
 - [Domains](https://github.com/Degen-dev/ProxDocs/blob/master/Domains.md)
+- [Nginx](https://github.com/Degen-dev/ProxDocs/blob/master/Nginx.md)
 
 ## Documentation License
 This documentation is licensed under the GNU Free Documentation License. A copy of the license is included in the file entitled "[LICENSE](https://github.com/Degen-dev/ProxDocs/blob/master/LICENSE)".

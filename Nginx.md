@@ -3,5 +3,71 @@ Nginx is a common tool used for load balancing as well as reverse-proxying. We w
 
 Assuming you are running a system based off of Debian, run the following command to install nginx:
 ```sh
-sudo apt install nginx
-``
+$ sudo apt install nginx
+```
+
+After you have Nginx installed, configure it in `/etc/nginx/nginx.conf`. The configuration I would recommend can be found below:
+```nginx
+user root; # change this to be the user you are hosting Degeneracy on
+worker_processes auto;
+pid /run/nginx.pid;
+include /etc/nginx/modules-enabled/*.conf;
+
+events {
+        worker_connections 1024;
+}
+
+http {
+    include /etc/nginx/mime.types;
+    default_type application/octet-stream;
+    map_hash_bucket_size 128;
+
+    sendfile on;
+    tcp_nopush on;
+
+    tcp_nodelay on;
+
+    reset_timedout_connection on;
+
+    access_log off;
+    error_log off;
+    
+    server {
+        listen 80 default_server;
+        listen [::]:80 default_server;
+        listen 443 ssl http2;
+        server_name your.domain.com; # replace with your actual domain
+
+        location / {
+            proxy_pass http://127.0.0.1:8443; # set this to the port you are hosting your instance on
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header Host $http_host;
+            proxy_http_version 1.1;
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_cache_bypass $http_upgrade;
+
+            proxy_redirect off;
+            proxy_read_timeout 240s;  
+
+            # The small block below will block googlebot
+            if ($http_user_agent ~ (Googlebot)) {
+                return 403;
+            }
+        }
+    }
+}
+```
+
+<!--TODO: Eventually migrate SSL/TLS to its own file to provide better documentation-->
+
+## SSL
+After setting up Nginx, you may want to setup SSL through Nginx via Cerbot. To get Certbot, run the following command:
+```sh
+$ sudo apt install certbot
+```
+After installing Certbot run the following command to add SSL to your site:
+```sh
+$ certbot --nginx -d your.domain.com
+```
+Don't forget to replace `your.domain.com` with your actual domain.
