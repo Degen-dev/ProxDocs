@@ -27,3 +27,6 @@ $ node {filename}.js
 ```
 
 Be sure to exclude the curly brackets and change `filename` to the actual name of the file you are trying to run.
+
+## Authors
+- [Degen-dev (Degenerate)](https://github.com/Degen-dev)

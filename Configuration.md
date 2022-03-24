@@ -25,3 +25,6 @@ The meaning for each configurable option can be found below:
 | Bundle | Bundle is the path to the UV bundle file. The default name and path to this file is `uv/uv.bundle.js`. |
 | Config | Config is the path to the UV config file. The default name and path to this file is `uv/uv.bundle.js`. |
 | SW | SW is the path to the UV Service Worker file. The default name and path to this file is `uv/uv.sw.js`. |
+
+## Authors
+- [Degen-dev (Degenerate)](https://github.com/Degen-dev)

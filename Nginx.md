@@ -77,3 +77,7 @@ After installing Certbot run the following command to add SSL to your site:
 $ certbot --nginx -d your.domain.com
 ```
 Don't forget to replace `your.domain.com` with your actual domain.
+
+## Authors
+- [Degen-dev (Degenerate)](https://github.com/Degen-dev)
+- [EnderKingJ](https://github.com/EnderKingJ)
