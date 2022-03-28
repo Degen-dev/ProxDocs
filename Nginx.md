@@ -8,7 +8,7 @@ $ sudo apt install nginx
 
 After you have Nginx installed, configure it in `/etc/nginx/nginx.conf`. The configuration I would recommend can be found below:
 ```nginx
-user root; # change this to be the user you are hosting Degeneracy on
+user root; # change this to be the user you are hosting your instance on
 worker_processes auto;
 pid /run/nginx.pid;
 include /etc/nginx/modules-enabled/*.conf;
@@ -65,9 +65,7 @@ http {
 }
 ```
 
-<!--TODO: Eventually migrate SSL/TLS to its own file to provide better documentation-->
-
-## SSL
+## SSL/TLS
 After setting up Nginx, you may want to setup SSL through Nginx via Cerbot. To get Certbot, run the following command:
 ```sh
 $ sudo apt install certbot

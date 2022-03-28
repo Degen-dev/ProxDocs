@@ -24,3 +24,9 @@ The authors of each file can be viewed in the "Authors" section of each file.
 
 ## Documentation License
 This documentation is licensed under the GNU Free Documentation License. A copy of the license is included in the file entitled "[LICENSE](https://github.com/Degen-dev/ProxDocs/blob/master/LICENSE)".
+
+## TODO
+- Move SSL/TLS to its own file
+- Clean everything up
+- Possibly make a website for ProxDocs
+- Possible add docs to use Cloudflare
