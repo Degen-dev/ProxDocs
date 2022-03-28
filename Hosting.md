@@ -15,7 +15,7 @@ This will provide a list of free and paid hosting providers.
 | [Contabo](https://contabo.com) | Contabo is a widely used hosting service that has very good specs for the cheapest prices. There are many issues with Contabo though, such as bad customer service and port speeds. |
 | [Dedipath](https://dedipath.com) | Dedipath is a great hosting provider in all categories. With fairly cheap servers with good specs, they are a go-to solution for many. |
 | [OVH Cloud](https://ovhcloud.com) | OVH Cloud is a well-known hosting provider, with cheap and good servers and speeds. Some issues are that customer support is more on the poor side, and servers may take some time to be set up. |
-| [Scaleway](https://scaleway.com) | Scaleway is a decently well-known hosting service. They have services like Dedicated Servers, Web Hosting, Domaing Registering, and more! Their prices are very good for their services. |
+| [Scaleway](https://scaleway.com) | Scaleway is a decently well-known hosting provider. They have services like Dedicated Servers, Web Hosting, Domain Registration, and more! The prices for their services are very reasonable. |
 
 ## Authors
 - [Degen-dev (Degenerate)](https://github.com/Degen-dev)

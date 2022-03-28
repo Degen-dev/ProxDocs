@@ -10,10 +10,13 @@ $ git clone https://github.com/Degen-dev/Degeneracy
 Be sure to replace `Degen-dev/Degeneracy` with the repo to the proxy you are trying to clone, assuming you are not trying to clone Degeneracy.
 
 ## Installing Dependencies
-Web proxies and proxy sites will have dependencies in order to get them up and running. In general, a proxy site will use a Node.js framework to serve static files and [NPM](https://www.npmjs.com) to install dependencies. To install dependencies, simply run the following command:
+Web proxies and proxy sites will have dependencies in order to get them up and running. In general, a proxy site will use a Node.js framework to serve static files and [NPM](https://www.npmjs.com) to install dependencies. To install dependencies, you will need to cd into the repository you just cloned and then run `npm install` The commands can be seen below:
 ```sh
+$ cd RepoName
 $ npm install
 ```
+
+Be sure to change "RepoName" to the actual name of the repo you just cloned.
 
 ## Starting the Site
 Sometimes the creator of a site will include a start script in npm that makes it as simple as possible to start the proxy. See the command below:
