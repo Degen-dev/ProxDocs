@@ -23,7 +23,12 @@ Making "sufficient" documentation for a proxy site is difficult and lengthy. Pro
 The authors of each file can be viewed in the "Authors" section of each file.
 
 ## Documentation License
-This documentation is licensed under the GNU Free Documentation License. A copy of the license is included in the file entitled "[LICENSE](https://github.com/Degen-dev/ProxDocs/blob/master/LICENSE)".
+Copyright (C)  2022, Degen-dev.
+Permission is granted to copy, distribute and/or modify this document 
+under the terms of the GNU Free Documentation License, Version 1.3
+or any later version published by the Free Software Foundation;
+with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+A copy of the license is included in the file entitled "[LICENSE.md](https://github.com/Degen-dev/ProxDocs/blob/master/LICENSE.md)".
 
 ## TODO
 - Move SSL/TLS to its own file
