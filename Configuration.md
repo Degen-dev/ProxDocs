@@ -20,7 +20,7 @@ The meaning for each configurable option can be found below:
 | Prefix | The prefix is the prefix that you want users to see. Ex: `https://example.com/service.` The default prefix is `service`. |
 | Bare | Bare Servers can run on directories. For example, if the directory was /bare/ then the bare origin would look like `http://example.org/bare/`. The bare origin is passed to clients. |
 | encodeUrl| EncodeUrl is how you want the URL a proxy site's visitors has to be encoded. Options include `Ultraviolet.codec.base64.encode`, `Ultraviolet.codec.plain.encode`, or `Ultraviolet.codec.xor.encode`. It is recommended that you use `xor` or `base64` as it hides the queries your visitors are searching and visiting.
-| decodeURL | DecodeUrl is how you want the url to be decoded. It is recommended you keep it the same as `encodeUrl`. |
+| decodeUrl | DecodeUrl is how you want the url to be decoded. It is recommended you keep it the same as `encodeUrl`. |
 | Handler | Handler is the path to the UV handler. The default name and path to this file is `/uv/uv.handler.js`. |
 | Bundle | Bundle is the path to the UV bundle file. The default name and path to this file is `uv/uv.bundle.js`. |
 | Config | Config is the path to the UV config file. The default name and path to this file is `uv/uv.bundle.js`. |
