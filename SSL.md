@@ -1,5 +1,5 @@
 # SSL/TLS
-This will require that you have followed the ProxDocs guide to install and use [Nginx](https://github.com/Degen-dev/blob/master/Nginx.md).
+This will require that you have followed the ProxDocs guide to install and use [Nginx](https://github.com/Degen-dev/ProxDocs/blob/master/Nginx.md).
 
 SSL will allow users to access your instance in a secure manner. Using Nginx and Certbot will allow you to generate and use SSL certificates for free. To install Certbot, run the following command:
 ```sh
