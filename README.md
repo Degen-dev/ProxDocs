@@ -18,7 +18,7 @@ Making "sufficient" documentation for a proxy site is difficult and lengthy. Pro
 - [Hosting](https://github.com/Degen-dev/ProxDocs/blob/master/Hosting.md)
 - [Domains](https://github.com/Degen-dev/ProxDocs/blob/master/Domains.md)
 - [Nginx](https://github.com/Degen-dev/ProxDocs/blob/master/Nginx.md)
-
+- [SSL/TLS](https://github.com/Degen-dev/ProxDocs/blob/master/SSL.md)
 ## Authors
 The authors of each file can be viewed in the "Authors" section of each file.
 
