@@ -1,11 +1,3 @@
-<!-- 
-    Copyright (C)  2022, Degen-dev.
-    Permission is granted to copy, distribute and/or modify this document
-    under the terms of the GNU Free Documentation License, Version 1.3
-    or any later version published by the Free Software Foundation;
-    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
-    A copy of the license is included in the file entitled "LICENSE".
--->
 # ProxDocs
 ProxDocs is a highly detailed and useful guide to hosting a web proxy site.
 
@@ -22,14 +14,19 @@ Making "sufficient" documentation for a proxy site is difficult and lengthy. Pro
 ## Authors
 The authors of each file can be viewed in the "Authors" section of each file.
 
-## Documentation License
-Copyright (C)  2022-present, Degen-dev.
+## Contributing
+See [CONTRIBUTING.md](https://github.com/Degen-dev/ProxDocs/blob/master/CONTRIBUTING.md) for information on contributing to ProxDocs.
+
+## License
+```
+Copyright (C) 2022-present, Degen-dev
 
 Permission is granted to copy, distribute and/or modify this document 
 under the terms of the GNU Free Documentation License, Version 1.3
 or any later version published by the Free Software Foundation;
 with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
-A copy of the license is included in the file entitled "[LICENSE.md](https://github.com/Degen-dev/ProxDocs/blob/master/LICENSE.md)".
+A copy of the license is included in the file entitled "LICENSE.md".
+```
 
 ## TODO
 - Clean everything up
