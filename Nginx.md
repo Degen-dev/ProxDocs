@@ -35,26 +35,21 @@ http {
     server {
         listen 80 default_server;
         listen [::]:80 default_server;
-        listen 443 ssl http2;
         server_name your.domain.com; # replace with your actual domain
 
-        location / {
-            proxy_pass http://127.0.0.1:8443; # set this to the port you are hosting your instance on
-            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-            proxy_set_header X-Real-IP $remote_addr;
-            proxy_set_header Host $http_host;
-            proxy_set_header Connection $http_connection;
-            proxy_http_version 1.1;
-            proxy_set_header Upgrade $http_upgrade;
-            proxy_cache_bypass $http_upgrade;
-
-            proxy_redirect off;
-            proxy_read_timeout 240s;  
-
-            proxy_buffer_size 128k;
-            proxy_buffers 4 256k;
-            proxy_busy_buffers_size 256k;
-            proxy_temp_file_write_size 256k;
+        location / { 
+                # Upgrade WebSockets
+                proxy_set_header Upgrade $http_upgrade;
+                proxy_set_header Connection 'Upgrade';
+                # Increase header buffer
+                proxy_connect_timeout 10; 
+                proxy_send_timeout 90; 
+                proxy_read_timeout 90; 
+                proxy_buffer_size 128k;
+                proxy_buffers 4 256k;
+                proxy_busy_buffers_size 256k;
+                proxy_temp_file_write_size 256k;
+                proxy_pass http://127.0.0.1:8080; # change this to the port UltraViolet is listening on
 
             # The small block below will block googlebot
             if ($http_user_agent ~ (Googlebot)) {
