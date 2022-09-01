@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs on Proxdocs</title>
+    <link>https://proxdocs.motortruck1221.tech/docs/</link>
+    <description>Recent content in Docs on Proxdocs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 31 Aug 2022 18:28:11 +0000</lastBuildDate><atom:link href="https://proxdocs.motortruck1221.tech/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic Configuration</title>
+      <link>https://proxdocs.motortruck1221.tech/docs/Configuration/</link>
+      <pubDate>Wed, 31 Aug 2022 18:28:11 +0000</pubDate>
+      
+      <guid>https://proxdocs.motortruck1221.tech/docs/Configuration/</guid>
+      <description>Different proxies have different ways to configure them. This will go over how to configure Ultraviolet.
+Ultraviolet Ultraviolet has its configuration in a file called uv.config.js. In this case of Degeneracy, this file can be found in public/uv/uv.config.js. See the default configuration below:
+self.__uv$config = { prefix: &amp;#39;/service/&amp;#39;, bare: &amp;#39;/bare/&amp;#39;, encodeUrl: Ultraviolet.codec.xor.encode, decodeUrl: Ultraviolet.codec.xor.decode, handler: &amp;#39;/uv/uv.handler.js&amp;#39;, bundle: &amp;#39;/uv/uv.bundle.js&amp;#39;, config: &amp;#39;/uv/uv.config.js&amp;#39;, sw: &amp;#39;/uv/uv.sw.js&amp;#39;, }; The meaning for each configurable option can be found below:</description>
+    </item>
+    
+    <item>
+      <title>Basic Setup</title>
+      <link>https://proxdocs.motortruck1221.tech/docs/Setup/</link>
+      <pubDate>Wed, 31 Aug 2022 18:28:11 +0000</pubDate>
+      
+      <guid>https://proxdocs.motortruck1221.tech/docs/Setup/</guid>
+      <description>Often times, a proxy site that is open source will include basic setup instructions for their site. These instructions normally include how to clone the repository, and how to run or &amp;ldquo;start&amp;rdquo; the backend web proxy, as well as serve the static files of the site.
+Cloning Cloning a proxy is as simple as running git clone, and then the link to the repository. See an example below:
+$ git clone https://github.</description>
+    </item>
+    
+    <item>
+      <title>Domains</title>
+      <link>https://proxdocs.motortruck1221.tech/docs/Domains/</link>
+      <pubDate>Wed, 31 Aug 2022 18:28:11 +0000</pubDate>
+      
+      <guid>https://proxdocs.motortruck1221.tech/docs/Domains/</guid>
+      <description>Once you&amp;rsquo;ve got hosting down, you need to purchase domains for your instance of a site. This will list some of, what I believe to be, the most useful places to register a domain.
+Registar Reasons to Use and Reasons Not to Use Porkbun Porkbun is notoriously known for being very inexpensive. At some points, domains ending in .xyz or .top will be sold by porkbun for less than a dollar.</description>
+    </item>
+    
+    <item>
+      <title>Hosting</title>
+      <link>https://proxdocs.motortruck1221.tech/docs/Hosting/</link>
+      <pubDate>Wed, 31 Aug 2022 18:28:11 +0000</pubDate>
+      
+      <guid>https://proxdocs.motortruck1221.tech/docs/Hosting/</guid>
+      <description>This will provide a list of free and paid hosting providers.
+Free Options Hosting Provider Pros and Cons of each provider Oracle Cloud Free Tier Oracle Cloud is remarkable in that it is free. You can pretty much get a full VPS (virtual private server) experience for no cost to you. Repl.it Replit is a well known hosting option. It provides free hosting as well as a web code editor. However, hosting proxies violates Replit&amp;rsquo;s terms of service and can result in your account getting suspended or permanently banned.</description>
+    </item>
+    
+    <item>
+      <title>Nginx</title>
+      <link>https://proxdocs.motortruck1221.tech/docs/Nginx/</link>
+      <pubDate>Wed, 31 Aug 2022 18:28:11 +0000</pubDate>
+      
+      <guid>https://proxdocs.motortruck1221.tech/docs/Nginx/</guid>
+      <description>Nginx is a common tool used for load balancing as well as reverse-proxying. We will be using Nginx to pass your instance to your domains as well as to add SSL to your site.
+Assuming you are running a Linux system based off of Debian, run the following command to install nginx:
+$ sudo apt install nginx After you have Nginx installed, configure it in /etc/nginx/nginx.conf. The configuration I would recommend can be found below:</description>
+    </item>
+    
+    <item>
+      <title>SSL</title>
+      <link>https://proxdocs.motortruck1221.tech/docs/SSL/</link>
+      <pubDate>Wed, 31 Aug 2022 18:28:11 +0000</pubDate>
+      
+      <guid>https://proxdocs.motortruck1221.tech/docs/SSL/</guid>
+      <description>This will require that you have followed the ProxDocs guide to install and use Nginx.
+SSL will allow users to access your instance in a secure manner. Using Nginx and Certbot will allow you to generate and use SSL certificates for free. To install Certbot, run the following command:
+$ sudo apt install certbot After installing Certbot run the following command to add SSL to your site:
+$ certbot --nginx -d your.</description>
+    </item>
+    
+  </channel>
+</rss>

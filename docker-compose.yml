@@ -1,0 +1,6 @@
+version: '3'
+services:
+  web:
+    image: motortruck1221/proxdocs:latest
+    ports:
+      - "1313:80"
